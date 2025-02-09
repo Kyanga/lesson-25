@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+<body>
+    <h2>Conditional Statements in JS</h2>
+    <P id="p1"></P>
+    <p id="p2"></p>
+
+    <script>
+        var time=new Date().getHours();
+        var greeting="";
+        if (time<10){
+            greeting="Good Morning";
+        }
+        else if(time<20){
+            greeting="Good Day";
+        }
+        else{
+            greeting="Good Evening"
+        }
+        document.getElementById("p1").innerHTML="Current time is "+time;
+        document.getElementById("p2").innerHTML=greeting;
+    </script>
+</body>
+</html>
